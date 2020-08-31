@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class scheduleCourse extends Component {
   render() {
     return (
