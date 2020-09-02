@@ -1,8 +1,7 @@
 .library-course {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-rows: 50px 1fr;
-  background: cornflowerblue;
+  grid-template-rows: 80px 1fr;
 
   &__title-check {
     grid-row: 1/2;
@@ -13,6 +12,9 @@
   &__line {
     grid-column: 1/-1;
     grid-row: 1/2;
+    border-bottom: 1px solid #F2F2F2;
+    margin-top: 19px;
+    margin-bottom: 24px;
   }
 
   &__arrow {
@@ -47,9 +49,7 @@
     line-height: 22px;
   }
 
-  &__line {
-    border-bottom: 1px solid #F2F2F2;
-  }
+  &__line {}
 
   &__icon {
     color: $color-blue;
