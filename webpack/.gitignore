@@ -1,8 +1,0 @@
-#nodejs
-node_moudles/
-npm-debug.log
-yarn-error.log
-
-#project
-dist/
-env.js

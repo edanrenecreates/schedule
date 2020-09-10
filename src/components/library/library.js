@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import * as actions from '../../actions';
+
 import LibraryCourse from './libraryCourse';
 
 class Library extends Component {
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchCourses()
     }
 
@@ -14,14 +15,15 @@ class Library extends Component {
         const data = this.props.courses
 
         return data.map((course, index) => {
-            return <LibraryCourse {...course} key={index} />
+            return <LibraryCourse {...course} key={index}/>
         })
     }
+
     render() {
         return (
             <div className="library">
                 <h1 className="library__title">Course Library</h1>
-                {this.renderCourses()}
+                { this.renderCourses() }
             </div>
         )
     }
